@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Tourism</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body background="pic3.jpg">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Kerala Tourism</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+         
+     </header>
+
+    <div class="container my-4">
+        <!-- Alert Section -->
+        <div id="home"class="alert alert-info" role="alert">
+            Welcome to Kerala Tourism! Explore the lush greenery, tranquil backwaters, and vibrant culture of Kerala.
+        </div>
+
+        <!-- Hero Section -->
+        <div class="text-center my-4">
+            
+            <p class="mt-2 text-muted">Experience the beauty of Kerala - where nature meets culture.</p>
+        </div>
+
+        <!-- Buttons and Modal -->
+        <div class="text-center my-4">
+            <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                Book Your Trip
+            </button>
+            <button type="button" class="btn btn-primary" onclick="window.alert('Thank you for exploring Kerala Tourism!')">
+                Learn More
+            </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bookingModalLabel">Book Your Kerala Tour</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Plan your dream vacation to Kerala! Fill out the form below to get started.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Proceed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards Section -->
+        <div class="row my-4">
+            <div class="col-md-4">
+                <div class="card  h-100">
+                    <img src="pic4.jpg" class="card-img-top  h-100" alt="Backwaters">
+                    <div class="card-body">
+                        <h5 class="card-title">Kerala Backwaters</h5>
+                        <p class="card-text">Enjoy the serene beauty of Kerala's tranquil backwaters on a houseboat.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card  h-100">
+                    <img src="pic5.jpg" class="card-img-top  h-100" alt="Hill Stations">
+                    <div class="card-body">
+                        <h5 class="card-title">Hill Stations</h5>
+                        <p class="card-text">Visit the misty hills of Munnar and Wayanad for a refreshing escape.</p>
+                        <a href="#" class="btn btn-primary">Discover</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card  h-100">
+                    <img src="pic6.jpg" class="card-img-top  h-100" alt="Beaches">
+                    <div class="card-body">
+                        <h5 class="card-title">Beaches</h5>
+                        <p class="card-text">Relax on the pristine beaches of Kovalam and Varkala.</p>
+                        <a href="#" class="btn btn-primary">Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="mt-4 text-white" id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-success text-white text-center py-3">
+        <p>© 2025 Kerala Tourism | Designed with ♥ using Bootstrap</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
