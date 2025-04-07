@@ -7,22 +7,57 @@
     <title>Kerala Tourism</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('pic3.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: white;
+        }
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .hero-section {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 60px 20px;
+            border-radius: 20px;
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        #contact form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+        }
+        footer {
+            margin-top: 40px;
+        }
+    </style>
 </head>
 
-<body background="pic3.jpg">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Kerala Tourism</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container">
+                <a class="navbar-brand fs-3" href="#">Kerala Tourism</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link active" href="#home">Home</a>
                         </li>
-                        
                         <li class="nav-item">
                             <a class="nav-link" href="#gallery">Gallery</a>
                         </li>
@@ -34,109 +69,95 @@
             </div>
         </nav>
     </header>
-    
-         
-     </header>
 
-    <div class="container my-4">
-        <!-- Alert Section -->
-        <div id="home"class="alert alert-info" role="alert">
-            Welcome to Kerala Tourism! Explore the lush greenery, tranquil backwaters, and vibrant culture of Kerala.
-        </div>
-
-        <!-- Hero Section -->
-        <div class="text-center my-4">
-            
-            <p class="mt-2 text-muted">Experience the beauty of Kerala - where nature meets culture.</p>
-        </div>
-
-        <!-- Buttons and Modal -->
-        <div class="text-center my-4">
-            <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#bookingModal">
-                Book Your Trip
-            </button>
-            <button type="button" class="btn btn-primary" onclick="window.alert('Thank you for exploring Kerala Tourism!')">
-                Learn More
-            </button>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="bookingModalLabel">Book Your Kerala Tour</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Plan your dream vacation to Kerala! Fill out the form below to get started.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-success">Proceed</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Cards Section -->
-        <div class="row my-4">
-            <div class="col-md-4">
-                <div class="card  h-100">
-                    <img src="pic4.jpg" class="card-img-top  h-100" alt="Backwaters">
-                    <div class="card-body">
-                        <h5 class="card-title">Kerala Backwaters</h5>
-                        <p class="card-text">Enjoy the serene beauty of Kerala's tranquil backwaters on a houseboat.</p>
-                        <a href="#" class="btn btn-primary">Explore</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card  h-100">
-                    <img src="pic5.jpg" class="card-img-top  h-100" alt="Hill Stations">
-                    <div class="card-body">
-                        <h5 class="card-title">Hill Stations</h5>
-                        <p class="card-text">Visit the misty hills of Munnar and Wayanad for a refreshing escape.</p>
-                        <a href="#" class="btn btn-primary">Discover</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card  h-100">
-                    <img src="pic6.jpg" class="card-img-top  h-100" alt="Beaches">
-                    <div class="card-body">
-                        <h5 class="card-title">Beaches</h5>
-                        <p class="card-text">Relax on the pristine beaches of Kovalam and Varkala.</p>
-                        <a href="#" class="btn btn-primary">Visit</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Form Section -->
-        <div class="mt-4 text-white" id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-success">Send Message</button>
-            </form>
+    <div class="container my-5" id="home">
+        <div class="hero-section text-center">
+            <h1 class="display-4 fw-bold">Welcome to Kerala Tourism</h1>
+            <p class="lead">Explore lush greenery, serene backwaters, and vibrant traditions of God's Own Country.</p>
+            <button class="btn btn-warning me-3" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Your Trip</button>
+            <button class="btn btn-outline-light" onclick="window.alert('Thank you for exploring Kerala Tourism!')">Learn More</button>
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Book Your Kerala Tour</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Plan your dream vacation to Kerala! Fill out the form below to get started.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-success">Proceed</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="container my-5" id="gallery">
+        <div class="row text-center">
+            <h2 class="mb-4">Explore Top Destinations</h2>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="pic4.jpg" class="card-img-top" alt="Backwaters">
+                    <div class="card-body">
+                        <h5 class="card-title">Kerala Backwaters</h5>
+                        <p class="card-text">Cruise through peaceful canals and lagoons on a traditional houseboat.</p>
+                        <a href="#" class="btn btn-outline-success">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="pic5.jpg" class="card-img-top" alt="Hill Stations">
+                    <div class="card-body">
+                        <h5 class="card-title">Hill Stations</h5>
+                        <p class="card-text">Unwind in the misty hills of Munnar and Wayanad surrounded by tea gardens.</p>
+                        <a href="#" class="btn btn-outline-success">Discover</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="pic6.jpg" class="card-img-top" alt="Beaches">
+                    <div class="card-body">
+                        <h5 class="card-title">Beaches</h5>
+                        <p class="card-text">Bask in the golden sun at Kovalam and Varkala beachside retreats.</p>
+                        <a href="#" class="btn btn-outline-success">Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container my-5" id="contact">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning">Send Message</button>
+        </form>
+    </div>
+
     <!-- Footer -->
-    <footer class="bg-success text-white text-center py-3">
-        <p>© 2025 Kerala Tourism | Designed with ♥ using Bootstrap</p>
+    <footer class="bg-success text-white text-center py-4">
+        <p class="mb-0">© 2025 Kerala Tourism | Designed with ♥ using Bootstrap</p>
     </footer>
 
     <!-- Bootstrap JS -->
