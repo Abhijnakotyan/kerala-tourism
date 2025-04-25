@@ -20,4 +20,4 @@ A beautifully designed responsive tourism website showcasing the natural and cul
 - JavaScript (Bootstrap JS bundle)
 -------------------------------------
 ## 🌐 Live Preview
-Check it out here 👉 [thirukerala.netlify.app]([https://thirukerala.netlify.app/) 
+Check it out here 👉 [thirukerala.netlify.app](https://thirukerala.netlify.app/) 
