@@ -37,7 +37,13 @@ body {
 .no-hover-effect:hover {
     transform: none !important;
     box-shadow: none !important;
+    filter: none !important;
   }
+  .no-hover-effect img:hover {
+    transform: none !important;
+    filter: none !important;
+  }
+  
 #contact form {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -46,3 +52,31 @@ body {
 footer {
     margin-top: 40px;
 }
+
+.square-card {
+  aspect-ratio: 1/1; /* Makes card perfectly square */
+  overflow: hidden;
+  border-radius: 1rem;
+  height: 90%;
+  width:90%; /* Rounded corners */
+}
+.square-card img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.square-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+  }
+  .square-card img:hover {
+    transform: none !important;
+    filter: none !important;
+  }
+  .blur-image {
+    filter: blur(2px); 
+  }
+  .body2{
+    background-color: seagreen;
+  }
