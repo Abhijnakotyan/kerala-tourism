@@ -75,7 +75,7 @@ footer {
     filter: none !important;
   }
   .blur-image {
-    filter: blur(2px); 
+    filter: blur(1px); 
   }
   .body2{
     background-color: seagreen;
